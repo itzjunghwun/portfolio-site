@@ -5,31 +5,68 @@ import { ImageCarousel } from "../components/ImageCarousel";
 
 export default function Home() {
   return (
-    <main className="min-h-screen px-6 md:px-20 pt-28 pb-16">
+    <main className="min-h-screen pb-16 overflow-x-hidden">
 
-      {/* HERO */}
-      <motion.section 
-        className="mb-40 max-w-4xl"
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
+      {/* HERO WRAPPER */}
+      <div className="relative w-full mb-40">
 
-        <h1 className="text-5xl md:text-7xl font-semibold leading-[1.1] tracking-tight mb-6">
-          Daniel Seog.<br />
-          Frontend Developer.
-        </h1>
+        {/* BACKDROP */}
+        <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
+          <motion.img
+            src="/images/backdrop2.jpg"
+            initial={{ opacity: 0, scale: 1.05, filter: "blur(8px)" }}
+            animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+            transition={{ duration: 1.2, delay:0.1 }}
+            className="w-full h-full object-cover"
+          />
 
-        <p className="text-gray-600 text-lg leading-relaxed max-w-xl">
-          I build modern, scalable web applications with a focus on clean UI,
-          intuitive UX, and real-world impact.
-        </p>
+          {/* dark overlay */}
+          <div className="absolute inset-0 bg-black/30" />
 
-      </motion.section>
+          {/* left fade for readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/40 to-transparent" />
+        </div>
+
+        {/* HERO CONTENT */}
+        <motion.section 
+          className="max-w-6xl mx-auto px-6 md:px-20 pt-28 pb-16 flex items-center justify-between"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+
+          {/* TEXT */}
+          <div className="max-w-xl">
+            <h1 className="text-5xl md:text-7xl font-semibold leading-[1.1] tracking-tight mb-6">
+              Daniel Seog.<br />
+              Frontend Developer.
+            </h1>
+
+            <p className="text-gray-800 text-lg leading-relaxed">
+              I build modern, scalable web applications with a focus on clean UI,
+              intuitive UX, and real-world impact.
+            </p>
+          </div>
+
+          {/* HEADSHOT */}
+          <div className="relative hidden md:block">
+            <div className="absolute inset-0 rounded-2xl bg-white/40 blur-2xl scale-110" />
+            
+            <img
+              src="/images/headshot.jpg"
+              className="relative w-48 h-48 md:w-64 md:h-64 object-cover rounded-2xl 
+                         shadow-[0_30px_80px_rgba(0,0,0,0.25)] 
+                         border border-white/40"
+            />
+          </div>
+
+        </motion.section>
+
+      </div>
 
       {/* PROJECTS */}
       <motion.section 
-        className="mb-32"
+        className="max-w-6xl mx-auto px-6 md:px-20 mb-32"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
@@ -78,7 +115,7 @@ export default function Home() {
                   image: "/images/darkmode.png",
                   title: "Dark Mode Support",
                   description: 
-                    "Implemented a dark mode interface to enhance user comfort and accessibility, providing a visually optimized experience for low-light environments.",
+                    "Implemented a dark mode interface to enhance user comfort and accessibility.",
                 },
               ]}
             />
@@ -91,7 +128,7 @@ export default function Home() {
               </h3>
 
               <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                Built a full-stack SaaS platform with secure authentication, per-user data isolation, and a responsive dashboard for managing invoices in real time.
+                Built a full-stack SaaS platform with secure authentication, per-user data isolation, and a responsive dashboard.
               </p>
 
               <p className="text-xs text-gray-500 mb-4">
