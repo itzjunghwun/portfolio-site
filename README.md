@@ -47,50 +47,14 @@ I focus on building modern, scalable web applications with clean UI, intuitive U
 
 ---
 
-## 🚀 Getting Started
+## What I Learned
 
-Clone the repository:
+- Designing clean, production-level user interfaces
 
-```bash
-git clone https://github.com/itzjunghwun/portfolio-site.git
-cd portfolio-site
+- Structuring scalable applications using Next.js
 
-Install dependencies:
+- Creating smooth animations with Framer Motion
 
-npm install
+- Building and deploying full-stack apps with Supabase and Vercel
 
-Run the development server:
-
-npm run dev
-
-Open in browser:
-
-http://localhost:3000
-
-app/                # Next.js App Router pages
-components/         # Reusable UI components
-public/images/      # Static assets (images)
-
-What I Learned
-
-Designing clean, production-level user interfaces
-
-Structuring scalable applications using Next.js
-
-Creating smooth animations with Framer Motion
-
-Building and deploying full-stack apps with Supabase and Vercel
-
-Improving user experience through layout, motion, and responsiveness
-
-What I Learned
-
-Designing clean, production-level user interfaces
-
-Structuring scalable applications using Next.js
-
-Creating smooth animations with Framer Motion
-
-Building and deploying full-stack apps with Supabase and Vercel
-
-Improving user experience through layout, motion, and responsiveness
+- Improving user experience through layout, motion, and responsiveness
