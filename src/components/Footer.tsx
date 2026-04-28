@@ -10,8 +10,8 @@ export default function Footer() {
           <h2 className="text-xl font-semibold mb-2">
             Let’s Connect
           </h2>
-          <p className="text-gray-600 max-w-sm">
-            I'm always open to opportunities, collaborations, or just talking about tech.
+          <p className="text-[var(--muted)] max-w-sm">
+            I&apos;m always open to opportunities, collaborations, or just talking about tech.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export default function Footer() {
             itzjunghwun@email.com
           </a>
 
-          <p className="flex items-center gap-2 text-gray-600">
+          <p className="flex items-center gap-2 text-[var(--muted)]">
             <Phone size={16} />
             (770) 568-3181
           </p>

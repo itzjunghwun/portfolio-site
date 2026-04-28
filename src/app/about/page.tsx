@@ -17,13 +17,13 @@ export default function About() {
 
       {/* CONTENT */}
       <motion.div
-        className="space-y-6 text-gray-600 leading-relaxed text-lg"
+        className="space-y-6 text-[var(--muted)] leading-relaxed text-lg"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         <p>
-          I'm a frontend-focused developer passionate about building clean,
+          I&apos;m a frontend-focused developer passionate about building clean,
           modern web applications that solve real problems. I enjoy working
           with technologies like Next.js, TypeScript, and Tailwind to create
           scalable and user-friendly experiences.
@@ -37,7 +37,7 @@ export default function About() {
         </p>
 
         <p>
-          I'm constantly improving my workflow, expanding my skills, and exploring
+          I&apos;m constantly improving my workflow, expanding my skills, and exploring
           new tools like WordPress to grow as both a developer and problem solver.
         </p>
       </motion.div>
@@ -56,7 +56,7 @@ export default function About() {
           “So whether you eat or drink or whatever you do, do it all for the glory of God.”
         </p>
 
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-[rgba(102,73,48,0.68)]">
           1 Corinthians 10:31 (NIV)
         </p>
       </motion.div>

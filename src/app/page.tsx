@@ -21,10 +21,10 @@ export default function Home() {
           />
 
           {/* dark overlay */}
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/24" />
 
           {/* left fade for readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/88 via-white/52 to-white/10" />
         </div>
 
         {/* HERO CONTENT */}
@@ -42,7 +42,7 @@ export default function Home() {
               Frontend Developer.
             </h1>
 
-            <p className="text-gray-800 text-lg leading-relaxed">
+            <p className="text-[var(--foreground)]/85 text-lg font-medium leading-relaxed">
               I build modern, scalable web applications with a focus on clean UI,
               intuitive UX, and real-world impact.
             </p>
@@ -50,13 +50,14 @@ export default function Home() {
 
           {/* HEADSHOT */}
           <div className="relative hidden md:block">
-            <div className="absolute inset-0 rounded-2xl bg-white/40 blur-2xl scale-110" />
+            <div className="absolute inset-0 rounded-2xl bg-white/36 blur-2xl scale-110" />
             
             <img
               src="/images/headshot.jpg"
+              alt="Daniel Seog"
               className="relative w-48 h-48 md:w-64 md:h-64 object-cover rounded-2xl 
                          shadow-[0_30px_80px_rgba(0,0,0,0.25)] 
-                         border border-white/40"
+                         border border-white/45"
             />
           </div>
 
@@ -88,31 +89,31 @@ export default function Home() {
             <ImageCarousel
               slides={[
                 {
-                  image: "/images/landing.png",
+                  image: "/images/ledgerone/landing.png",
                   title: "Landing Page",
                   description: 
                     "Clean, modern landing page designed to introduce the product and guide users toward onboarding.",
                 },
                 {
-                  image: "/images/login.png",
+                  image: "/images/ledgerone/login.png",
                   title: "Authentication System",
                   description: 
                     "Secure login system with user authentication and protected access to personalized dashboards.",
                 },
                 {
-                  image: "/images/signup.png",
+                  image: "/images/ledgerone/signup.png",
                   title: "Account Creation",
                   description: 
                     "User-friendly signup flow with validation and secure credential handling.",
                 },
                 {
-                  image: "/images/dashboard.png",
+                  image: "/images/ledgerone/dashboard.png",
                   title: "Invoice Dashboard",
                   description: 
                     "Interactive dashboard allowing users to create, manage, and track invoices in real time.",
                 },
                 {
-                  image: "/images/darkmode.png",
+                  image: "/images/ledgerone/darkmode.png",
                   title: "Dark Mode Support",
                   description: 
                     "Implemented a dark mode interface to enhance user comfort and accessibility.",
@@ -127,11 +128,11 @@ export default function Home() {
                 LedgerOne
               </h3>
 
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <p className="text-[var(--muted)] mb-4 text-sm leading-relaxed">
                 Built a full-stack SaaS platform with secure authentication, per-user data isolation, and a responsive dashboard.
               </p>
 
-              <p className="text-xs text-gray-500 mb-4">
+              <p className="text-xs text-[rgba(102,73,48,0.68)] mb-4">
                 Next.js · TypeScript · Tailwind · Supabase
               </p>
 
